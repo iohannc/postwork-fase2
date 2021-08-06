@@ -1,0 +1,28 @@
+{
+  "name": "postwork-fase2",
+  "version": "1.0.0",
+  "description": "- Estefanía Aguilar Arroyo\r - Hugo Joshua Gasperin Castelan\r - Juan Negrete Castañeda\r - Gustavo Rodríguez Calzada\r - Ángel Esteban Torres Trejo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iohannc/postwork-fase2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iohannc/postwork-fase2/issues"
+  },
+  "homepage": "https://github.com/iohannc/postwork-fase2#readme",
+  "devDependencies": {
+    "webpack": "^5.49.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "@babel/core": "^7.15.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
