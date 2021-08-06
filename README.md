@@ -1,5 +1,4 @@
-# postwork-fase2
-## Repositorio del Equipo 7 para el Postwork de la Fase 2
+# Equipo 7 - Fase 2 - BEDU Santander
 ### Integrantes:
 - Estefanía Aguilar Arroyo
 - Hugo Joshua Gasperin Castelan
