@@ -1,0 +1,12 @@
+body {
+    background-color: green;
+}
+h1 {
+    text-align: center;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
