@@ -22,12 +22,12 @@ body{
     flex-direction: column;
 }
 
-.h5{
-    padding-top: 20px;
+.h4{
+    padding-top: 15px;
 }
 
 .comida{
-    width: 10%;
+    width: 15%;
 }
 
 .random{
@@ -37,6 +37,8 @@ body{
 
 .inputs{
     display: flex;
+    margin-left: 5%;    
+
 }
 
 .form-control{
@@ -51,6 +53,7 @@ input {
     background-position: 15px 7px; 
     background-repeat: no-repeat;
     padding: 2px 500px 2px 40px;
+    margin-right: 5%;
 }
 
 input::placeholder{
@@ -58,15 +61,13 @@ input::placeholder{
     }
 
 
-.inputs{
-    margin-left: 5%;    
-}
-
 .bRandom{
     display:flex;
     border-radius: 20px;
     align-items: center;
     width: 16%;
+    background-color:rgb(175, 172, 172);
+    border: 5px solid rgb(175, 172, 172);
 }
 
 
