@@ -44,31 +44,35 @@ body{
 }
 
 input {
-    background-color:rgb(156, 149, 149);
+    background-color:rgb(175, 172, 172);
+    border: 8px solid rgb(175, 172, 172);
+    border-radius: 20px;
+    background-image: url('../img/search.svg');
+    background-position: 15px 7px; 
+    background-repeat: no-repeat;
+    padding: 2px 500px 2px 40px;
 }
 
 input::placeholder{
     color: black;
     }
 
-.form1{
-    margin-left: 10%;
+
+.inputs{
+    margin-left: 5%;    
 }
 
-.inputs .form2 input{
-    cursor: pointer;
-    padding-right: 70px;
-}
-.form2{
-    margin-left: 5%;
-    
+.bRandom{
+    display:flex;
+    border-radius: 20px;
+    align-items: center;
+    width: 16%;
 }
 
-.random{
-    height: 30px;
-}
 
-.btn {
-    background-color: gray;
+.bRandom > img{ 
+    width: 15%;
+    margin-left: 2%;
+    margin-top: 1%;
+    padding-right: 10px;
 }
-
