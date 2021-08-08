@@ -48,8 +48,17 @@ body{
 }
 
 .inputs .form2 input{
+    cursor: pointer;
     padding-right: 70px;
 }
 .form2{
     margin-left: 5%;
+}
+
+.random{
+    height: 30px;
+}
+
+.btn , input{
+    background-color: gray;
 }
