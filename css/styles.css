@@ -4,19 +4,29 @@ body{
 
 .navbar{
     background-color: rgb(255, 255, 255);
-    padding-top: 30px;
+    padding-top: 15px;
     box-shadow: 0 0 6px 0 rgb(100, 97, 97);
     display: flex;
 }
 
 .logo{
-    width: 30%;
+    width: 20%;
     padding-bottom: 10px;
     padding-left: 20px;
     cursor: pointer;
 }
 
+.contenedor{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .h4{
-    padding-top: 20px;
-    padding-left: 40%;
+    padding-top: 30px;
+    
+}
+
+.comida{
+    width: 15%;
 }
