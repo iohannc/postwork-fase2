@@ -22,11 +22,34 @@ body{
     flex-direction: column;
 }
 
-.h4{
-    padding-top: 30px;
-    
+.h5{
+    padding-top: 20px;
 }
 
 .comida{
-    width: 15%;
+    width: 10%;
+}
+
+.random{
+    width: 40px;
+    height: 40px;
+}
+
+.inputs{
+    display: flex;
+}
+
+.form-control{
+    padding-right: 250px;
+}
+
+.form1{
+    margin-left: 10%;
+}
+
+.inputs .form2 input{
+    padding-right: 70px;
+}
+.form2{
+    margin-left: 5%;
 }
