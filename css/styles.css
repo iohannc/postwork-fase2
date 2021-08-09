@@ -10,8 +10,7 @@ body{
     background-color: #6ADEA6;
     box-shadow: 0 0 6px 0 rgb(100, 97, 97);
     display: flex;
-    padding-top: 20px;
-    padding-bottom: 20px;
+
 }
 /*Estilo a cada etiqueta a*/
 a {
@@ -37,6 +36,11 @@ a {
 .opciones > a{    
     padding-right: 50px;
     color: #157145;
+    font-family: Modak;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 108px;
 }
 
 /*H1 con la imagen, debajo del navbar*/
@@ -51,8 +55,8 @@ a {
     padding-top: 20px;
     padding-left: 40px;
     color: #157145;
-    font-weight: 1000;
-    font-size: 64px;
+    font-weight: 900;
+    font-size: 50px;
     line-height: 160%;
 }
 
@@ -61,51 +65,44 @@ a {
     font-family: Kadwa;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
     padding-left: 40px;
 }
 
-.random{
-    width: 40px;
-    height: 40px;
-}
-
+/*Clase general de los inputs*/
 .inputs{
     display: flex;
-    margin-left: 5%;    
-
+    margin-left: 3%;    
 }
 
-.form-control{
-    padding-right: 280px;
-}
-
+/*Input para buscar receta*/
 input {
-    background-color:rgb(175, 172, 172);
-    border: 8px solid rgb(175, 172, 172);
+    border: 2px solid #35D789;
     border-radius: 20px;
     background-image: url('../img/search.svg');
-    background-position: 15px 7px; 
+    background-position: 15px 14px; 
     background-repeat: no-repeat;
-    padding: 2px 500px 2px 40px;
+    padding: 10px 400px 10px 40px;
     margin-right: 5%;
 }
 
+/*Placeholder del input*/
 input::placeholder{
-    color: black;
+    color: #157145;
     }
 
-
+/*Clase del boton para buscar random*/
 .bRandom{
     display:flex;
     border-radius: 20px;
     align-items: center;
     width: 16%;
-    background-color:rgb(175, 172, 172);
-    border: 2px solid rgb(175, 172, 172);
+    background-color: transparent;
+    border: 2px solid #35D789;
+    color: #157145;
 }
 
-
+/*Lupa que está en el input*/
 .bRandom > img{ 
     width: 15%;
     margin-left: 2%;
