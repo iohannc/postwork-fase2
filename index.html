@@ -7,33 +7,34 @@
     <link href="./css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <h1>LOGO</h1>
+    <section id="recetas">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>LOGO</h1>
+            </div>
+            
+            <div class="opciones">
+                <a href="#recetas">Recetas</a>
+                <a href="#">Ingredientes</a>
+                <a href="#">Acerca de</a>
+            </div>
+            
+        </nav>
+
+        <div class="contenedor">
+            <h2 class="h3">¿Qué quieres cocinar hoy?</h2>
+            <!-- <img src="./img/comida.png" alt="comida" class="comida"> -->
+            <p class="p1"> Usa nuestra búsqueda avanzada para<br>encontrar las instrucciones de tu comida<br>favorita</p>
         </div>
-        
-        <div class="opciones">
-            <a href="#">Recetas</a>
-            <a href="#">Ingredientes</a>
-            <a href="#">Acerca de</a>
+
+        <div class="inputs">
+            <input type="text" id="site-search" name="q" aria-label="Search through site content" placeholder="Busca tu receta favorita">
+            <button class="bRandom" type="submit">
+                <img src="./img/random.svg" alt=""> 
+                Probar algo aleatorio
+            </button>
         </div>
-        
-    </nav>
-
-    <div class="contenedor">
-        <h2 class="h3">¿Qué quieres cocinar hoy?</h2>
-        <!-- <img src="./img/comida.png" alt="comida" class="comida"> -->
-        <p class="p1"> Usa nuestra búsqueda avanzada para<br>encontrar las instrucciones de tu comida<br>favorita</p>
-    </div>
-
-    <div class="inputs">
-        <input type="text" id="site-search" name="q" aria-label="Search through site content" placeholder="Busca tu receta favorita">
-        <button class="bRandom" type="submit">
-            <img src="./img/random.svg" alt=""> 
-            Probar algo aleatorio
-        </button>
-    </div>
-
+    </section>
 
     <div class="contenedor">
         <h6 class="th6">Tus recetas favoritas en un solo logar</h6>

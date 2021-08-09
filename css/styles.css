@@ -9,7 +9,9 @@ body{
 .navbar{
     background-color: #6ADEA6;
     display: flex;
-
+    position: fixed;
+    top: 0; 
+    width: 100%;
 }
 /*Estilo a cada etiqueta a*/
 a {
@@ -29,6 +31,7 @@ a {
     font-family: Modak;
     font-weight: 1000;
     font-size: 40px;
+    
 }
 
 /*Opciones del lado derecho, Recetas, Ingredientes, Acerca de */
@@ -45,13 +48,12 @@ a {
 /*H1 con la imagen, debajo del navbar*/
 .contenedor{
     display: flex;
-    
     flex-direction: column;
 }
 
 /*ETIQUETA H3*/
 .h3{
-    padding-top: 20px;
+    padding-top: 80px;
     padding-bottom: 20px;
     padding-left: 40px;
     color: #157145;
@@ -126,11 +128,11 @@ input::placeholder{
 
 /*div con las imagenes en cicrulo y descripcion*/
 .instruccion{
-    display: flex;
     display:flex;
     padding-left: 3%;
-    flex-direction: row;
     padding: 20px;
+    position: absolute;
+
 }
 
 /*Tamaño de las imagenes*/
