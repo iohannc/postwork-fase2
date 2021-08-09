@@ -185,3 +185,47 @@ input::placeholder{
     padding-left: 35%;
     padding-top: 10px;
 }
+
+/*h6 de prrueba nuestras sugerencias*/
+.th6-3{
+    padding-top: 20px;
+    padding-left: 40px;
+    font-family: Kadwa;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 90px;
+    color: #157145;
+}
+
+/*Div de los circulos*/
+.ingredientes-tips{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding-bottom: 100px;
+}
+
+/*Creacion de los circulos en los ingredientes*/
+.circulo {
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #6ADEA6;
+}
+
+/*Footer*/
+.page-footer{
+    background-color: #157145;
+}
+
+.page-footer{
+    display: flex;
+}
+
+.integrantes{
+    padding-left: 10%;
+    color: #fff;
+}
