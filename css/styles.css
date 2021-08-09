@@ -167,23 +167,22 @@ input::placeholder{
 }
 
 /*Listado de sugerencias de recetas*/
-.sug_recetas{
-    display: flex;
-    justify-content: space-between;
-}
-
-.sug_recetas > div{
-    padding: 10px;
-    margin: 10px;
-}
-
 .cuadrado{
-    width:200px;
-    height:100px;
+    width: 80%;
+    height: 240px;
     background-color: #9DE5B6;
+    
 }
 
-.r1 > p, .r2 > p, .r3 > p ,.r4 > p, .r5 >p{
-    text-align: center;
+.carousel{
+    padding-left: 20%;
+}
+
+.carousel-item > p{
+    padding-left: 35%;
     padding-top: 10px;
+}
+
+.carousel-control-prev{
+    background-color: black;
 }
