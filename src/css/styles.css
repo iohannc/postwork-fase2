@@ -1,6 +1,6 @@
 /*Imagen de fondo*/
 body{    
-    background-image:url("/img/fondo.jpeg");
+    background-image:url("../assets/images/fondo.jpeg");
     background-repeat: no-repeat;
     background-size: 100%;
 
@@ -46,10 +46,15 @@ a {
     line-height: 70px;
 }
 
-/*H1 con la imagen, debajo del navbar*/
+/*H1*/
 .contenedor{
     display: flex;
     flex-direction: column;
+}
+/* Imagen bajo la navbar*/
+.comida {
+    max-width: 50%;
+    margin: auto;
 }
 
 /*ETIQUETA H3*/
@@ -83,7 +88,7 @@ a {
 input {
     border: 2px solid #35D789;
     border-radius: 20px;
-    background-image: url('../img/search.svg');
+    background-image: url('../assets/images/search.svg');
     background-position: 15px 14px; 
     background-repeat: no-repeat;
     padding: 10px 400px 10px 40px;
