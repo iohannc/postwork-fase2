@@ -21,7 +21,7 @@ a {
 
 /*Padding a LOGO*/
 .logo{
-    padding-left: 20px;
+    padding-left: 40px;
 
 }
 
@@ -48,14 +48,21 @@ a {
 
 /*ETIQUETA H3*/
 .h3{
-    padding-top: 12px;
+    padding-top: 20px;
+    padding-left: 40px;
     color: #157145;
     font-weight: 1000;
+    font-size: 64px;
+    line-height: 160%;
 }
 
-/*Imagen debajo del h3*/
-.comida{
-    width: 15%;
+/*Parrafo debajo del h3*/
+.p1{
+    font-family: Kadwa;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    padding-left: 40px;
 }
 
 .random{
