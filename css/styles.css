@@ -3,7 +3,7 @@ body{
 }
 
 .navbar{
-    background-color: rgb(255, 255, 255);
+    background-color: #6ADEA6;
     padding-top: 15px;
     box-shadow: 0 0 6px 0 rgb(100, 97, 97);
     display: flex;
@@ -22,8 +22,10 @@ body{
     flex-direction: column;
 }
 
-.h4{
+.h3{
     padding-top: 12px;
+    color: #157145;
+    font-weight: 1000;
 }
 
 .comida{
