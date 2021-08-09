@@ -221,10 +221,12 @@ input::placeholder{
     background-color: #157145;
 }
 
+/*Display flex a los div del footer*/
 .page-footer{
     display: flex;
 }
 
+/*Estilos a los nombres de los integrantes*/
 .integrantes{
     padding-left: 10%;
     color: #fff;
