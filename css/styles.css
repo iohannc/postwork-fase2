@@ -8,7 +8,6 @@ body{
 /*Navbar de la pagina*/
 .navbar{
     background-color: #6ADEA6;
-    box-shadow: 0 0 6px 0 rgb(100, 97, 97);
     display: flex;
 
 }
@@ -40,7 +39,7 @@ a {
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
-    line-height: 108px;
+    line-height: 80px;
 }
 
 /*H1 con la imagen, debajo del navbar*/
@@ -65,8 +64,9 @@ a {
     font-family: Kadwa;
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
     padding-left: 40px;
+    padding-bottom: 40px;
 }
 
 /*Clase general de los inputs*/
@@ -97,12 +97,12 @@ input::placeholder{
     border-radius: 20px;
     align-items: center;
     width: 16%;
-    background-color: transparent;
+    background-color: #35D789;
     border: 2px solid #35D789;
     color: #157145;
 }
 
-/*Lupa que está en el input*/
+/*img random que está en el input*/
 .bRandom > img{ 
     width: 15%;
     margin-left: 2%;
@@ -110,9 +110,16 @@ input::placeholder{
     padding-right: 10px;
 }
 
+/*h6 debajo de los input*/
 .contenedor > h6{
     padding-top: 20px;
-    font-weight: bold;
+    padding-left: 40px;
+    font-family: Kadwa;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 90px;
+    color: #157145;
     
 }
 
