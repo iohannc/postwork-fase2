@@ -38,8 +38,8 @@ a {
     font-family: Modak;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
-    line-height: 80px;
+    font-size: 25px;
+    line-height: 70px;
 }
 
 /*H1 con la imagen, debajo del navbar*/
@@ -52,6 +52,7 @@ a {
 /*ETIQUETA H3*/
 .h3{
     padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 40px;
     color: #157145;
     font-weight: 900;
@@ -66,7 +67,7 @@ a {
     font-weight: bold;
     font-size: 25px;
     padding-left: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 
 /*Clase general de los inputs*/
@@ -123,18 +124,31 @@ input::placeholder{
     
 }
 
+/*div con las imagenes en cicrulo y descripcion*/
 .instruccion{
+    display: flex;
     display:flex;
-    padding-top: 15px;
-    align-items: center;
-    padding-left: 25%;
-}
-.uno > img, .dos > img, .tres > img{
-    width: 20%;
+    padding-left: 3%;
+    flex-direction: row;
+    padding: 20px;
 }
 
+/*Tamaño de las imagenes*/
+.uno > img, .dos > img, .tres > img{
+    width: 35%;
+    padding-left: 10%;
+
+}
+
+/*Parrafos debajo de las imagenes*/
 .uno > p, .dos > p, .tres > p{
     padding-right: 50%;
-    text-align: left;
+    font-family: Pridi;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 37px;
+    text-align: center;
+    color: #000000;
 }
 
