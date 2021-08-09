@@ -2,7 +2,7 @@
 body{    
     background-image:url("/img/fondo.jpeg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100%;
 
 }
 /*Navbar de la pagina*/
@@ -12,6 +12,7 @@ body{
     position: fixed;
     top: 0; 
     width: 100%;
+    z-index: 1;
 }
 /*Estilo a cada etiqueta a*/
 a {
@@ -53,7 +54,7 @@ a {
 
 /*ETIQUETA H3*/
 .h3{
-    padding-top: 80px;
+    padding-top: 120px;
     padding-bottom: 20px;
     padding-left: 40px;
     color: #157145;
@@ -114,8 +115,8 @@ input::placeholder{
 }
 
 /*h6 debajo de los input*/
-.contenedor > h6{
-    padding-top: 20px;
+.th6{
+    padding-top: 150px;
     padding-left: 40px;
     font-family: Kadwa;
     font-style: normal;
@@ -132,7 +133,7 @@ input::placeholder{
     padding-left: 3%;
     padding: 20px;
     position: absolute;
-
+    padding-top: 250px;
 }
 
 /*Tamaño de las imagenes*/
@@ -154,3 +155,35 @@ input::placeholder{
     color: #000000;
 }
 
+.th6-2{
+    padding-top: 250px;
+    padding-left: 40px;
+    font-family: Kadwa;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 90px;
+    color: #157145;
+}
+
+/*Listado de sugerencias de recetas*/
+.sug_recetas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sug_recetas > div{
+    padding: 10px;
+    margin: 10px;
+}
+
+.cuadrado{
+    width:200px;
+    height:100px;
+    background-color: #9DE5B6;
+}
+
+.r1 > p, .r2 > p, .r3 > p ,.r4 > p, .r5 >p{
+    text-align: center;
+    padding-top: 10px;
+}
