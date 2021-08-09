@@ -1,25 +1,31 @@
+/*Imagen de fondo*/
 body{    
-    background-color: #f0eeee;
-}
+    background-image:url("/img/fondo.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 
+}
+/*Navbar de la pagina*/
 .navbar{
     background-color: #6ADEA6;
     box-shadow: 0 0 6px 0 rgb(100, 97, 97);
     display: flex;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-
+/*Estilo a cada etiqueta a*/
 a {
     text-decoration: none;
     padding-top: 20px;
 }
 
+/*Padding a LOGO*/
 .logo{
     padding-left: 20px;
 
 }
 
+/*Estilos al h1 llamado LOGO*/
 .logo > h1{
     color: white;
     font-family: Modak;
@@ -27,23 +33,27 @@ a {
     font-size: 40px;
 }
 
+/*Opciones del lado derecho, Recetas, Ingredientes, Acerca de */
 .opciones > a{    
     padding-right: 50px;
     color: #157145;
 }
 
+/*H1 con la imagen, debajo del navbar*/
 .contenedor{
     display: flex;
-    align-items: center;
+    
     flex-direction: column;
 }
 
+/*ETIQUETA H3*/
 .h3{
     padding-top: 12px;
     color: #157145;
     font-weight: 1000;
 }
 
+/*Imagen debajo del h3*/
 .comida{
     width: 15%;
 }
