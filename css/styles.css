@@ -6,8 +6,8 @@ body{
     background-color: #6ADEA6;
     box-shadow: 0 0 6px 0 rgb(100, 97, 97);
     display: flex;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 a {
@@ -17,10 +17,19 @@ a {
 
 .logo{
     padding-left: 20px;
+
+}
+
+.logo > h1{
+    color: white;
+    font-family: Modak;
+    font-weight: 1000;
+    font-size: 40px;
 }
 
 .opciones > a{    
     padding-right: 50px;
+    color: #157145;
 }
 
 .contenedor{
