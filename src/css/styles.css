@@ -25,7 +25,6 @@ a {
 /*Padding a LOGO*/
 .logo{
     padding-left: 40px;
-
 }
 
 /*Estilos al h1 llamado LOGO*/
@@ -41,11 +40,11 @@ a {
 .opciones > a{    
     padding-right: 50px;
     color: #157145;
-    font-family: Modak;
     font-style: normal;
-    font-weight: normal;
-    font-size: 25px;
+    font-size: 1.5rem;
     line-height: 70px;
+    font-family: 'Kadwa', sans-serif;
+    font-weight: 400;
 }
 
 /*H1*/
@@ -55,12 +54,12 @@ a {
     padding-left: 0 !important;
     padding-right: 0 !important;
     width: 100% !important;
+
 }
 /* Imagen bajo la navbar*/
 .comida {
-    max-width: 50%;
-    margin: auto;
-    margin-left: 20%;
+    width: 30%;
+    margin-left: 3em;
 }
 
 /*ETIQUETA H3*/
@@ -72,11 +71,13 @@ a {
     font-weight: 900;
     font-size: 50px;
     line-height: 160%;
+    font-family: 'Catamaran', sans-serif;
+    text-shadow: 4px 4px 0px rgb(255, 255, 255);
 }
 
 /*Parrafo debajo del h3*/
 .p1{
-    font-family: Kadwa;
+    font-family: 'Kadwa', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
@@ -114,7 +115,7 @@ input::placeholder{
     width: 16%;
     background-color: #35D789;
     border: 2px solid #35D789;
-    color: #157145;
+    color: #142b1f;
 }
 
 /*img random que está en el input*/
@@ -129,7 +130,7 @@ input::placeholder{
 .th6{
     padding-top: 70px;
     padding-left: 40px;
-    font-family: Kadwa;
+    font-family: 'Kadwa', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 25px;
@@ -161,7 +162,7 @@ input::placeholder{
 /*Parrafos debajo de las imagenes*/
 .uno > p, .dos > p, .tres > p{
     width:50%;
-    font-family: Pridi;
+    font-family: 'Pridi', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -172,10 +173,10 @@ input::placeholder{
 
 /*h6 de prrueba nuestras sugerencias*/
 .th6-2{
-    margin-top: 50px;
+    margin-top: 100px;
     padding-top:20px;
     padding-left: 40px;
-    font-family: Kadwa;
+    font-family: 'Kadwa', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 25px;
@@ -188,7 +189,6 @@ input::placeholder{
     width: 80%;
     height: 240px;
     background-color: #9DE5B6;
-    
 }
 
 /*Centrando carousel*/
@@ -206,7 +206,7 @@ input::placeholder{
 .th6-3{
     padding-top: 20px;
     padding-left: 40px;
-    font-family: Kadwa;
+    font-family: 'Kadwa', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 25px;
