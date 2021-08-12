@@ -55,17 +55,17 @@ a {
     width: 100% !important;
 
 }
-/* Imagen bajo la navbar*/
-.comida {
-    width: 30%;
-    margin-left: 3em;
-}
+/* Imagen bajo la navbar
+ELIMINADA
+Simplemente no se veía bien.
+*/
+
 
 /*ETIQUETA H3*/
 .h3{
     padding-top: 120px;
     padding-bottom: 20px;
-    padding-left: 40px;
+    padding-left: 25px;
     color: #157145;
     font-weight: 900;
     font-size: 50px;
@@ -178,7 +178,7 @@ input::placeholder {
     font-size: 24px;
     line-height: 37px;
     text-align: center;
-    color: #000000;
+    color: #0c4b2c;
 }
 
 /*h6 de prrueba nuestras sugerencias*/
@@ -266,7 +266,7 @@ input::placeholder {
   justify-content: space-between;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 800px) {
   .contenedor2 {
     flex-direction: row;
     flex-wrap: wrap;
@@ -328,13 +328,12 @@ input::placeholder {
     margin:auto;
   }
   .bRandom {
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 1em;
+    font-weight: 300;
     line-height: 140%;
-    width:60%;
+    width:40%;
     margin:auto;
-    margin-top:3%;
-    margin-bottom: 3%;
+    margin-top: 3%;
   }
   .inputs{
     display: flex;
@@ -348,7 +347,7 @@ input::placeholder {
   .opciones > a {
     padding-right: 10px;
     color: #157145;
-    font-family: Modak;
+    font-family: 'Kadwa', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 25px;
