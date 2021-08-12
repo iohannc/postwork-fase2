@@ -455,10 +455,10 @@ input::placeholder {
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 50px;
+    padding-top: 8%;
     left: 10%;
     top: 10%;
     width: 80%;
-    height: 80%;
+    height: 70%;
   }
 }
