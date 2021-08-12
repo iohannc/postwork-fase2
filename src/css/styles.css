@@ -105,6 +105,9 @@ input {
   background-repeat: no-repeat;
   padding: 10px 400px 10px 40px;
   margin-right: 5%;
+  font-size:20px;
+  line-height:30px;
+  font-weight:600;
 }
 
 /*Placeholder del input*/
