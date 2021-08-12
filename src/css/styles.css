@@ -144,13 +144,13 @@ input::placeholder {
 
 /*h6 debajo de los input*/
 .th6{
-    padding-top: 70px;
+    padding-top: 40px;
     padding-left: 40px;
     font-family: 'Kadwa', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 25px;
-    line-height: 90px;
+    line-height: 110%;
     color: #157145;
     
 }
@@ -415,7 +415,7 @@ input::placeholder {
     font-family: 'Kadwa', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 110%;
   }
   .sug_recetas {
