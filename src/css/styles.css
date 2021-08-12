@@ -275,7 +275,7 @@ input::placeholder {
   justify-content: space-between;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 780px) {
   .contenedor2 {
     flex-direction: row;
     flex-wrap: wrap;
