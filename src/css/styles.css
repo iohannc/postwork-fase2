@@ -23,8 +23,8 @@ a {
 }
 
 /*Padding a LOGO*/
-.logo {
-  padding-left: 40px;
+.logo{
+    padding-left: 40px;
 }
 
 /*Estilos al h1 llamado LOGO*/
@@ -36,58 +36,52 @@ a {
 }
 
 /*Opciones del lado derecho, Recetas, Ingredientes, Acerca de */
-.opciones > a {
-  padding-right: 50px;
-  color: #157145;
-  font-family: Modak;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 25px;
-  line-height: 70px;
+.opciones > a{    
+    padding-right: 50px;
+    color: #157145;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 70px;
+    font-family: 'Kadwa', sans-serif;
+    font-weight: 400;
 }
 
 /*H1*/
-.contenedor {
-  display: flex;
-  flex-direction: column;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  width: 100% !important;
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+
 }
-.contenedor2 {
-  display: flex;
-  flex-direction: column;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  width: 100% !important;
-  margin-top: 3%;
-}
-/* Imagen bajo la navbar*/
-.comida {
-  max-width: 50%;
-  margin: auto;
-  margin-left: 20%;
-}
+/* Imagen bajo la navbar
+ELIMINADA
+Simplemente no se veía bien.
+*/
+
 
 /*ETIQUETA H3*/
-.h3 {
-  padding-top: 120px;
-  padding-bottom: 20px;
-  padding-left: 40px;
-  color: #157145;
-  font-weight: 900;
-  font-size: 50px;
-  line-height: 160%;
+.h3{
+    padding-top: 120px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    color: #157145;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 160%;
+    font-family: 'Catamaran', sans-serif;
+    text-shadow: 4px 4px 0px rgb(255, 255, 255);
 }
 
 /*Parrafo debajo del h3*/
-.p1 {
-  font-family: Kadwa;
-  font-style: normal;
-  font-weight: 520;
-  font-size: 35px;
-  margin-left: 3%;
-  padding-bottom: 20px;
+.p1{
+    font-family: 'Kadwa', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    padding-left: 40px;
+    padding-bottom: 60px;
 }
 
 /*Clase general de los inputs*/
@@ -116,18 +110,14 @@ input::placeholder {
 }
 
 /*Clase del boton para buscar random*/
-.bRandom {
-  display: flex;
-  border-radius: 20px;
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 500;
-  align-items: center;
-  justify-content: center;
-  width: 16%;
-  background-color: #35d789;
-  border: 2px solid #35d789;
-  color: #000000;
+.bRandom{
+    display:flex;
+    border-radius: 20px;
+    align-items: center;
+    width: 16%;
+    background-color: #35D789;
+    border: 2px solid #35D789;
+    color: #142b1f;
 }
 
 /*img random que está en el input*/
@@ -139,13 +129,16 @@ input::placeholder {
 }
 
 /*h6 debajo de los input*/
-.th6 {
-  padding-left: 40px;
-  font-family: Kadwa;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 25px;
-  color: #157145;
+.th6{
+    padding-top: 70px;
+    padding-left: 40px;
+    font-family: 'Kadwa', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 90px;
+    color: #157145;
+    
 }
 
 /*div con las imagenes en cicrulo y descripcion*/
@@ -177,37 +170,35 @@ input::placeholder {
 }
 
 /*Parrafos debajo de las imagenes*/
-.uno > p,
-.dos > p,
-.tres > p {
-  width: 50%;
-  font-family: Pridi;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 37px;
-  text-align: center;
-  color: #000000;
+.uno > p, .dos > p, .tres > p{
+    width:50%;
+    font-family: 'Pridi', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 37px;
+    text-align: center;
+    color: #0c4b2c;
 }
 
 /*h6 de prrueba nuestras sugerencias*/
-.th6-2 {
-  margin-top: 50px;
-  padding-top: 20px;
-  padding-left: 40px;
-  font-family: Kadwa;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 25px;
-  line-height: 40px;
-  color: #157145;
+.th6-2{
+    margin-top: 100px;
+    padding-top:20px;
+    padding-left: 40px;
+    font-family: 'Kadwa', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 90px;
+    color: #157145;
 }
 
 /*Listado de sugerencias de recetas*/
-.cuadrado {
-  width: 80%;
-  height: 240px;
-  background-color: #9de5b6;
+.cuadrado{
+    width: 80%;
+    height: 240px;
+    background-color: #9DE5B6;
 }
 
 /*Centrando carousel*/
@@ -222,15 +213,15 @@ input::placeholder {
 }
 
 /*h6 de prrueba nuestras sugerencias*/
-.th6-3 {
-  padding-top: 20px;
-  padding-left: 40px;
-  font-family: Kadwa;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 25px;
-  line-height: 90px;
-  color: #157145;
+.th6-3{
+    padding-top: 20px;
+    padding-left: 40px;
+    font-family: 'Kadwa', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 90px;
+    color: #157145;
 }
 
 /*Div de los circulos*/
@@ -275,7 +266,7 @@ input::placeholder {
   justify-content: space-between;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 800px) {
   .contenedor2 {
     flex-direction: row;
     flex-wrap: wrap;
@@ -337,13 +328,12 @@ input::placeholder {
     margin:auto;
   }
   .bRandom {
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 1em;
+    font-weight: 300;
     line-height: 140%;
-    width:60%;
+    width:40%;
     margin:auto;
-    margin-top:3%;
-    margin-bottom: 3%;
+    margin-top: 3%;
   }
   .inputs{
     display: flex;
@@ -357,7 +347,7 @@ input::placeholder {
   .opciones > a {
     padding-right: 10px;
     color: #157145;
-    font-family: Modak;
+    font-family: 'Kadwa', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 25px;
