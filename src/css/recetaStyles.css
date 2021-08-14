@@ -7,12 +7,14 @@ body {
 .navbar {
   background-color: #6adea6;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1;
+  height: 12%;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.336);
 }
 /*Estilo a cada etiqueta a*/
 a {
@@ -37,7 +39,7 @@ a {
 #receta-header {
   display: flex;
   justify-content: space-between;
-  margin-top: 7rem;
+  margin-top: 9em;
 }
 #receta-header-right {
   align-self: flex-end;
@@ -63,10 +65,11 @@ a {
 /* Sólo para la palabra 'Ingredientes' */
 #titulo-receta + p {
   font-family: "Kadwa", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   margin-left: 0.17rem;
   margin-right: 4rem;
   font-size: 1.2rem;
+  color: #157145;
 }
 #ingredientes {
     display: flex;
@@ -75,6 +78,10 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.ingrediente > p {
+  color: #157145;
+  font-weight: 600;
 }
 /*Creacion de los circulos en los ingredientes*/
 .circulo {
@@ -97,6 +104,11 @@ a {
   margin-top: 3rem;
   margin-bottom: 3rem;
   text-align: justify;
+}
+
+#receta-body > h5 {
+  color: #157145;
+  font-weight: 700;
 }
 
 /*Clase general de los inputs*/
@@ -127,17 +139,18 @@ input::placeholder {
 
 /* Clase del boton para buscar random */
 .bRandom {
-  width: 20px;
+  width: 5rem;
   border-radius: 20px;
   align-items: center;
+  justify-content: center;
   background-color: #35d789;
   border: 2px solid #35d789;
-  color: #142b1f;
+  color: #157145;
 }
 
 /*img random que está en el input*/
 .bRandom > img {
-  width: 20px;
+  width: 60%;
 }
 
 /*h6 debajo de los input*/
