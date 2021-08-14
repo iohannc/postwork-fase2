@@ -22,6 +22,11 @@ function recetaRandom(event){
 // Funcion para buscar receta
 function buscarReceta(event){
     if(event.keyCode == '13'){
-        alert("Presionaste Enter al Input");
+        
+        let textInput = inputReceta.value.trim();
+        alert(textInput);
+
+
+
     }
 }
