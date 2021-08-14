@@ -24,9 +24,14 @@ function buscarReceta(event){
     if(event.keyCode == '13'){
         
         let textInput = inputReceta.value.trim();
-        alert(textInput);
 
-
+        // Comienza la busqueda en el API, con el texto que ingresó el usuario
+        fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${textInput}`)
+        .then(response => response.json())
+        .then( data =>{
+            console.log(data);
+        })
+    
 
     }
 }
