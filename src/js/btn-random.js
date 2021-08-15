@@ -1,12 +1,14 @@
 const btnRandom = document.querySelector('.bRandom');
-const recipeArea = document.getElementById('receta'); 
-const resultsArea = document.querySelector('.meal-results'); 
-console.log(recipeArea)
+
+// No es necesaria redeclarar estas constantes, si las declaran el intérprete
+// tira error y no funciona el botón, por eso los comenté.
+//const recipeArea = document.getElementById('receta'); 
+//const resultsArea = document.querySelector('.meal-results'); 
 
 //console.log(modalRandom)
 btnRandom.dataset.bsTarget = '#receta-modal';
 btnRandom.dataset.bsToggle = 'modal';
-btnRandom.addEventListener('click', mostrar );
+btnRandom.addEventListener('click', mostrar);
 
 function mostrar(event){
 
