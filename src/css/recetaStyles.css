@@ -196,10 +196,6 @@ input::placeholder {
 
 
 @media (min-width: 551px) and (max-width: 767px) {
-  body{
-    background-color: firebrick;
-  }
-
   input {
     padding: initial;
     font-size: 1rem;
@@ -246,16 +242,21 @@ input::placeholder {
 
 @media(max-width: 550px) {
 
-  body{
-    background-color: green;
-  }
-
   input {
-    padding: initial;
-    margin-top: 10px;
-    font-size: 1.1rem;
-    padding-left: 2rem;
+    margin-top: 13px;
+    border: 2px solid #35d789;
+    border-radius: 20px;
+    background-image: url("../assets/images/search.svg");
+    background-position: 14px 9px;
+    background-repeat: no-repeat;
+    padding: 5px 35px;
+    height: 30%;
+    margin-right: 5%;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
   }
   
+
 
 }
