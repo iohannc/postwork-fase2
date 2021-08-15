@@ -1,9 +1,9 @@
 const btnRandom = document.querySelector('.bRandom');
-const recipeArea = document.getElementById('receta'); 
-const resultsArea = document.querySelector('.meal-results'); 
-console.log(recipeArea)
 
-//console.log(modalRandom)
+// Tira error el querer redeclarar estas constantes (que ya están declaradas en search.js)
+//const recipeArea = document.getElementById('receta'); 
+//const resultsArea = document.querySelector('.meal-results'); 
+
 btnRandom.dataset.bsTarget = '#receta-modal';
 btnRandom.dataset.bsToggle = 'modal';
 btnRandom.addEventListener('click', mostrar );
