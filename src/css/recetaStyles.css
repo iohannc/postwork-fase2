@@ -179,6 +179,7 @@ input::placeholder {
 /*Footer*/
 .page-footer {
   background-color: #157145;
+  width: 100%;
 }
 
 /*Estilos a los nombres de los integrantes*/
