@@ -1,4 +1,7 @@
 const searchBtn = document.getElementById('site-search');
+const resultsArea = document.querySelector('.meal-results');
+const mealsResults = document.querySelector('.meals');
+
 searchBtn.addEventListener('keypress', getResults);
 
 function getResults(event) {
@@ -6,8 +9,20 @@ function getResults(event) {
         fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchBtn.value.trim()}`)
         .then(results => results.json()) 
         .then(results => {
-        window.location.href = 'http://127.0.0.1:5500/src/test.html';
-        document.querySelector('p').innerText = `${results.meals[0].strMeal}`
-        });
+            if (mealsResults.innerHTML != "") {
+                mealsResults.innerHTML = "";
+            }
+            for (meal of results.meals) {
+            let mealItem = document.createElement('div');
+            mealItem.className = 'meal-item';
+            mealItem.innerHTML = `
+            <a href="#">
+            <img src=${meal.strMealThumb} alt="Meal image">
+            <div class="meal-name">
+              <span>${meal.strMeal}</span>
+            </div>
+          </a>` 
+          mealsResults.appendChild(mealItem);
+        }});
     }
 }

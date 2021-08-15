@@ -191,6 +191,7 @@ input::placeholder {
   justify-content: space-around;
   width: 100%;
 }
+
 @media (max-width: 800px) {
   input {
     padding: initial;
