@@ -194,7 +194,12 @@ input::placeholder {
   width: 100%;
 }
 
-@media (max-width: 800px) {
+
+@media (min-width: 551px) and (max-width: 767px) {
+  body{
+    background-color: firebrick;
+  }
+
   input {
     padding: initial;
     font-size: 1rem;
@@ -237,4 +242,20 @@ input::placeholder {
     margin-left: 3rem;
     margin-top: initial;
   }
+}
+
+@media(max-width: 550px) {
+
+  body{
+    background-color: green;
+  }
+
+  input {
+    padding: initial;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    padding-left: 2rem;
+  }
+  
+
 }
