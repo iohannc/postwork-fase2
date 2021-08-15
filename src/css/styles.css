@@ -1,12 +1,464 @@
+/*Imagen de fondo*/
 body {
-    background-color: green;
+  background-image: url("../assets/images/fondo.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  width: 100% !important;
 }
-h1 {
-    text-align: center;
+/*Navbar de la pagina*/
+.navbar {
+  background-color: #6adea6;
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
+/*Estilo a cada etiqueta a*/
+a {
+  text-decoration: none;
+  padding-top: 20px;
+}
+
+/*Padding a LOGO*/
+.logo{
+    padding-left: 40px;
+}
+
+/*Estilos al h1 llamado LOGO*/
+.logo > h1 {
+  color: white;
+  font-family: Modak;
+  font-weight: 1000;
+  font-size: 40px;
+}
+
+/*Opciones del lado derecho, Recetas, Ingredientes, Acerca de */
+.opciones > a {
+  padding-right: 50px;
+  color: #157145;
+  font-family: Modak;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 50px;
+}
+
+/*H1*/
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  width: 100% !important;
+}
+.contenedor2 {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  width: 100% !important;
+  margin-top: 3%;
+}
+/* Imagen bajo la navbar*/
+.comida {
+  max-width: 40%;
+  margin-left: 16%;
+  margin-bottom: -4%;
+  padding-bottom: 0;
+}
+/* Imagen bajo la navbar
+ELIMINADA
+Simplemente no se veía bien.
+*/
+
+
+/*ETIQUETA H3*/
+.h3 {
+  padding-top: 110px;
+  padding-bottom: 0px;
+  margin-bottom: -2%;
+  padding-left: 40px;
+  color: #157145;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 100%;
+}
+
+/*Parrafo debajo del h3*/
+.p1 {
+  font-family: Kadwa;
+  font-style: normal;
+  font-weight: 520;
+  font-size: 25px;
+  padding-top: 0;
+  margin-left: 3%;
+  padding-bottom: 10px;
+}
+
+/*Clase general de los inputs*/
+.inputs {
+  display: flex;
+  margin-left: 3%;
+}
+
+/*Input para buscar receta*/
+input {
+  border: 2px solid #35d789;
+  border-radius: 20px;
+  background-image: url("../assets/images/search.svg");
+  background-position: 15px 14px;
+  background-repeat: no-repeat;
+  padding: 10px 400px 10px 40px;
+  margin-right: 5%;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+/*Placeholder del input*/
+input::placeholder {
+  color: #157145;
+}
+
+/*Clase del boton para buscar random*/
+.bRandom{
+    display:flex;
+    border-radius: 20px;
+    align-items: center;
+    width: 16%;
+    background-color: #35D789;
+    border: 2px solid #35D789;
+    color: #142b1f;
+}
+
+/*img random que está en el input*/
+.bRandom > img {
+  width: 20%;
+  margin-left: 1%;
+  margin-top: 1%;
+  padding-right: 5px;
+}
+
+/*h6 debajo de los input*/
+.th6{
+    padding-top: 40px;
+    padding-left: 40px;
+    font-family: 'Kadwa', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 110%;
+    color: #157145;
+    
+}
+
+/*div con las imagenes en cicrulo y descripcion*/
+.instruccion {
+  display: flex;
+  height: 240px;
+  margin-top: 30px;
+  justify-content: space-around;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  width: 100% !important;
+}
+
+/*Tamaño de las imagenes*/
+
+.uno,
+.dos,
+.tres {
+  width: 33%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.uno > img,
+.dos > img,
+.tres > img {
+  width: 50%;
+  margin:auto;
+}
+
+/*Parrafos debajo de las imagenes*/
+.uno > p,
+.dos > p,
+.tres > p {
+  width: 60%;
+  font-family: Pridi;
+  font-style: normal;
+  font-weight: normal;
+  padding-top: 1%;
+  font-size: 21px;
+  font-weight:400;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+}
+
+/*h6 de prrueba nuestras sugerencias*/
+.th6-2 {
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-left: 40px;
+  margin-bottom:20px;
+  font-family: Kadwa;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 40px;
+  color: #157145;
+}
+
+/*Listado de sugerencias de recetas*/
+.cuadrado{
+    width: 80%;
+    height: 240px;
+    background-color: #9DE5B6;
+}
+
+/*Centrando carousel*/
+.carousel {
+  padding-left: 20%;
+}
+
+/*Centrando parrafo del carousel*/
+.carousel-item > p {
+  padding-left: 35%;
+  padding-top: 10px;
+}
+
+/*h6 de prrueba nuestras sugerencias*/
+.th6-3{
+    padding-top: 20px;
+    padding-left: 40px;
+    font-family: 'Kadwa', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 90px;
+    color: #157145;
+}
+
+/*Div de los circulos*/
+.ingredientes-tips {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  padding-bottom: 100px;
+}
+
+/*Creacion de los circulos en los ingredientes*/
+.circulo {
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #6adea6;
+}
+
+/*Footer*/
+.page-footer {
+  background-color: #157145;
+}
+
+/*Display flex a los div del footer*/
+.page-footer {
+  display: flex;
+}
+
+/*Estilos a los nombres de los integrantes*/
+.integrantes {
+  padding-left: 10%;
+  color: #fff;
+}
+.sug_recetas {
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* modal */
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 25%;
+  top: 10%;
+  width: 40%;
+  height: 80%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 10%;
+}
+#modal-image {
+  border-radius: 10%;
+}
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 75%;
+  height: 90%;
+}
+.img-instr {
+  border-radius: 50%;
+}
+.close {
+  position: absolute;
+  top: 6px;
+  right: 25px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (max-width: 780px) {
+  .contenedor2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+  }
+  .instruccion {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  .uno > p,
+  .dos > p,
+  .tres > p {
+    line-height: 100%;
+  }
+  .uno > img,
+  .dos > img,
+  .tres > img {
+    width: 30%;
+    margin-left: 0;
+  }
+  
+  .uno,
+  .dos,
+  .tres {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4px;
+  }
+
+  .uno {
+    margin-left: 0;
+  }
+  .p1 {
+    font-size: 21px;
+    text-align: left;
+    font-weight: 500;
+    padding-bottom: 8px;
+    padding-left: 26px;
+  }
+  .h3 {
+    padding-top: 100px;
+    font-size: 40px;
+    padding-bottom: 10px;
+    text-align: left;
+  }
+  input {
+    font-size: 16px;
+    font-weight: 600;
+    width: 90%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 8px 40px;
+    margin: auto;
+  }
+  .bRandom {
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 140%;
+    width: 60%;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  .inputs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .logo {
+    padding-left: 20px;
+    padding-top: 6px;
+  }
+  .opciones > a {
+    padding-right: 10px;
+    color: #157145;
+    font-family: 'Kadwa', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 110%;
+  }
+  .sug_recetas {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0%;
+    margin-bottom: 3%;
+  }
+  .th6-2 {
+    margin-top: 10px;
+    margin:auto;
+    padding-bottom: 10px;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 40px;
+    color: #157145;
+  }
+  .contenedor2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 90% !important;
+    margin: auto !important;
+    margin-top: 3%;
+  }
+  .carousel {
+    margin:auto;
+    width:100%;
+    text-align: center; 
+  }
+  .carousel div div p{
+    width: 100%;
+    margin-left: -25%;
+  }
+  #modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 8%;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 70%;
+  }
 }
