@@ -337,7 +337,8 @@ input::placeholder {
   margin-top: 2rem;
 }
 #receta-header-right {
-  align-self: flex-end;
+  align-self: center;
+  margin-left: 4rem;
   margin-bottom: 4rem;
 }
 /*Imagen de la receta */

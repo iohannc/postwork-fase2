@@ -75,6 +75,7 @@ function showMeal(event) {
             </div>`;
         //Es mejor agregar la imagen como background del div a utilizar una img tag.
         recipeArea.firstElementChild.firstElementChild.style.backgroundImage = `url(${recipe.meals[0].strMealThumb})`
+        recipeArea.firstElementChild.firstElementChild.style.backgroundSize = 'cover';
 
     })
 }
