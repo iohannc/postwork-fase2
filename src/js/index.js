@@ -29,7 +29,12 @@ function buscarReceta(event){
         fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${textInput}`)
         .then(response => response.json())
         .then( data =>{
-            console.log(data);
+            let html = "";
+            if(data.meals){
+                data.meals.forEach(meal => {
+
+                })
+            }
         })
     
 
