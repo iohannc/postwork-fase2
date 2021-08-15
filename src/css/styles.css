@@ -1,0 +1,374 @@
+/*Imagen de fondo*/
+body {
+  background-image: url("../assets/images/fondo.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  width: 100% !important;
+}
+/*Navbar de la pagina*/
+.navbar {
+  background-color: #6adea6;
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+/*Estilo a cada etiqueta a*/
+a {
+  text-decoration: none;
+  padding-top: 20px;
+}
+
+/*Padding a LOGO*/
+.logo{
+    padding-left: 40px;
+}
+
+/*Estilos al h1 llamado LOGO*/
+.logo > h1 {
+  color: white;
+  font-family: Modak;
+  font-weight: 1000;
+  font-size: 40px;
+}
+
+/*Opciones del lado derecho, Recetas, Ingredientes, Acerca de */
+.opciones > a{    
+    padding-right: 50px;
+    color: #157145;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 70px;
+    font-family: 'Kadwa', sans-serif;
+    font-weight: 400;
+}
+
+/*H1*/
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+
+}
+/* Imagen bajo la navbar
+ELIMINADA
+Simplemente no se veía bien.
+*/
+
+
+/*ETIQUETA H3*/
+.h3{
+    padding-top: 120px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    color: #157145;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 160%;
+    font-family: 'Catamaran', sans-serif;
+    text-shadow: 4px 4px 0px rgb(255, 255, 255);
+}
+
+/*Parrafo debajo del h3*/
+.p1{
+    font-family: 'Kadwa', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    padding-left: 40px;
+    padding-bottom: 60px;
+}
+
+/*Clase general de los inputs*/
+.inputs {
+  display: flex;
+  margin-left: 3%;
+}
+
+/*Input para buscar receta*/
+input {
+  border: 2px solid #35d789;
+  border-radius: 20px;
+  background-image: url("../assets/images/search.svg");
+  background-position: 15px 14px;
+  background-repeat: no-repeat;
+  padding: 10px 250px 10px 40px;
+  margin-right: 5%;
+  font-size:20px;
+  line-height:30px;
+  font-weight:600;
+}
+
+/*Placeholder del input*/
+input::placeholder {
+  color: #157145;
+}
+
+/*Clase del boton para buscar random*/
+.bRandom{
+    display:flex;
+    border-radius: 20px;
+    align-items: center;
+    width: 16%;
+    background-color: #35D789;
+    border: 2px solid #35D789;
+    color: #142b1f;
+}
+
+/*img random que está en el input*/
+.bRandom > img {
+  width: 15%;
+  margin-left: 2%;
+  margin-top: 1%;
+  padding-right: 10px;
+}
+
+/*h6 debajo de los input*/
+.th6{
+    padding-top: 70px;
+    padding-left: 40px;
+    font-family: 'Kadwa', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 90px;
+    color: #157145;
+}
+
+/*div con las imagenes en cicrulo y descripcion*/
+.instruccion {
+  display: flex;
+  height: 240px;
+  margin-top: 30px;
+  justify-content: space-around;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  width: 100% !important;
+}
+
+/*Tamaño de las imagenes*/
+.uno {
+  margin-left: 10%;
+}
+
+.uno,
+.dos,
+.tres {
+  width: 30%;
+}
+.uno > img,
+.dos > img,
+.tres > img {
+  width: 40%;
+  margin-left: 5%;
+}
+
+/*Parrafos debajo de las imagenes*/
+.uno > p, .dos > p, .tres > p{
+    width:50%;
+    font-family: 'Pridi', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 37px;
+    text-align: center;
+    color: #0c4b2c;
+}
+
+/*h6 de prrueba nuestras sugerencias*/
+.th6-2{
+    margin-top: 100px;
+    padding-top:20px;
+    padding-left: 40px;
+    font-family: 'Kadwa', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 90px;
+    color: #157145;
+}
+
+/*Listado de sugerencias de recetas*/
+.cuadrado{
+    width: 80%;
+    height: 240px;
+    background-color: #9DE5B6;
+}
+
+/*Centrando carousel*/
+.carousel {
+  padding-left: 20%;
+}
+
+/*Centrando parrafo del carousel*/
+.carousel-item > p {
+  padding-left: 35%;
+  padding-top: 10px;
+}
+
+/*h6 de prrueba nuestras sugerencias*/
+.th6-3{
+    padding-top: 20px;
+    padding-left: 40px;
+    font-family: 'Kadwa', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 90px;
+    color: #157145;
+}
+
+/*Div de los circulos*/
+.ingredientes-tips {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  padding-bottom: 100px;
+}
+
+/*Creacion de los circulos en los ingredientes*/
+.circulo {
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #6adea6;
+}
+
+/*Footer*/
+.page-footer {
+  background-color: #157145;
+}
+
+/*Estilos a los nombres de los integrantes*/
+.integrantes {
+  padding-left: 10%;
+  color: #fff;
+}
+.sug_recetas {
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+.page-footer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .contenedor2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+  }
+  .instruccion {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  .uno > p,
+  .dos > p,
+  .tres > p {
+    line-height: 100%;
+  }
+  .uno > img,
+  .dos > img,
+  .tres > img {
+    width: 30%;
+    margin-left: 0;
+  }
+
+  .uno,
+  .dos,
+  .tres {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4px;
+  }
+
+  .uno {
+    margin-left: 0;
+  }
+  .p1 {
+    font-size: 21px;
+    text-align: left;
+    font-weight: 500;
+    padding-bottom: 8px;
+    padding-left: 26px;
+  }
+  .h3 {
+    padding-top: 100px;
+    font-size: 40px;
+    padding-bottom:10px;
+    text-align: left;
+  }
+  input{
+    font-size: 16px;
+    font-weight: 600;
+    width:90%;
+    margin-top:3%;
+    margin-bottom: 3%;
+    padding:8px 40px;
+    margin:auto;
+  }
+  .bRandom {
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 140%;
+    width:40%;
+    margin:auto;
+    margin-top: 3%;
+  }
+  .inputs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .logo {
+    padding-left: 20px;
+    padding-top: 6px;
+  }
+  .opciones > a {
+    padding-right: 10px;
+    color: #157145;
+    font-family: 'Kadwa', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .sug_recetas {
+    margin-top: 0%;
+    margin-bottom: 3%;
+  }
+  .th6-2 {
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-left: 60px;
+    padding-bottom: 10px;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 40px;
+    color: #157145;
+  }
+  .contenedor2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 90% !important;
+    margin:auto !important;
+    margin-top: 3%;
+  }
+}
