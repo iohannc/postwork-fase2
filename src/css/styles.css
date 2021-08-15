@@ -259,9 +259,159 @@ input::placeholder {
 .page-footer {
   display: flex;
   justify-content: space-around;
+  margin-top: 8rem;
   width: 100%;
 }
 
+/****************************************
+*COMIENZA SECCIÓN RESULTADOS DE BÚSQUEDA*
+*****************************************/
+.meal-results{
+  width: 80%;
+  display: none; 
+  flex-direction: column;
+  margin: 75px 100px 0 80px;
+}
+
+.results-title{
+  color: #157145;
+  font-family: Catamaran;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+/* CONTENEDOR DE LOS RESULTADOS */
+.meals{
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.meals a{
+  text-decoration: inherit;
+}
+
+/* CONTENEDOR DEL CARD */
+.meal-item{
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+/* IMAGEN DEL CARD */
+.meal-item img{
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.meal-item:hover {
+  /* border: solid 1px #35d789; */
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.meal-name {
+  margin-top: -10px;
+  padding: 2px 16px;
+}
+
+.meal-name{
+  padding: 10px 5px;
+  color: #363537;
+  font-size: 12px;
+  font-family: 'Pridi', serif;
+}
+
+/***************************************
+*TERMINA SECCIÓN RESULTADOS DE BÚSQUEDA*
+****************************************/
+
+/***************************************
+*        COMIENZA SECCIÓN RECETA       *
+****************************************/
+#receta {
+  background-color: #f5f5f5;
+}
+#receta-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+#receta-header-right {
+  align-self: center;
+  margin-left: 4rem;
+  margin-bottom: 4rem;
+}
+/*Imagen de la receta */
+#contenedor-imagen-receta {
+  background-color: #6adea6;
+  height: 450px;
+  width: 450px;
+  color: black;
+}
+#imagen-receta {
+  max-width: 100%;
+}
+
+/*Nombre de la receta*/
+#titulo-receta {
+  margin-right: 10rem;
+  color: #157145;
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 160%;
+  font-family: "Catamaran", sans-serif;
+}
+/* Sólo para la palabra 'Ingredientes' */
+#titulo-receta + p {
+  font-family: "Kadwa", sans-serif;
+  font-weight: 700;
+  margin-left: 0.17rem;
+  margin-right: 4rem;
+  font-size: 1.2rem;
+  color: #157145;
+}
+#ingredientes {
+    display: flex;
+}
+.ingrediente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ingrediente > p {
+  color: #157145;
+  font-weight: 600;
+}
+/*Creacion de los circulos en los ingredientes*/
+.circulo {
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #6adea6;
+  margin: auto 1em auto 1em;
+}
+
+/*Cuerpo de la receta (instrucciones, etc.)*/
+#receta-body {
+  font-family: "Kadwa", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  max-width: 80%;
+  margin-left: 6.5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-align: justify;
+}
+
+#receta-body > h5 {
+  color: #157145;
+  font-weight: 700;
+}
+/***************************************
+*        TERMINA SECCIÓN RECETA       *
+****************************************/
 @media (max-width: 800px) {
   .contenedor2 {
     flex-direction: row;
@@ -371,5 +521,22 @@ input::placeholder {
     width: 90% !important;
     margin:auto !important;
     margin-top: 3%;
+  }
+  /* Inician media queries de visualización de receta */
+  #receta-header {
+    flex-direction: column;
+  }
+  #contenedor-imagen-receta {
+    width: 250px;
+    height: 250px;
+    align-self: center;
+    margin-bottom: 2rem;
+  }
+  #titulo-receta {
+    font-size: 2.3rem;
+  }
+  #receta-body {
+    margin-left: 3rem;
+    margin-top: initial;
   }
 }

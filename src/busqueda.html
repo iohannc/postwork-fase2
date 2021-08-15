@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Busqueda</title>
+  <link href="./css/busqueda.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <h1>LOGO</h1>
+    </div>
+    <div class="inputs">
+      <form action="">
+        <input class="input-busqueda" type="text" placeholder="Busca tu receta favorita" >
+        <button class="btn-Random" type="submit">
+          <img src="./assets/images/random.svg" alt="Random">
+        </button>
+      </form>
+    </div>
+  </nav>
+  <div class="meal-results">
+    <span class="results-title">Resultados de la búsqueda</span>
+      <div class="meals">
+        <div class="meal-item">
+          <a href="#">
+            <img src="https://picsum.photos/536/354" alt="Meal image">
+            <div class="meal-name">
+              <span>Nombre comida</span>
+            </div>
+          </a>
+        </div><div class="meal-item">
+          <a href="#">
+            <img src="https://picsum.photos/536/354" alt="Meal image">
+            <div class="meal-name">
+              <span>Nombre comida</span>
+            </div>
+          </a>
+        </div>
+        <div class="meal-item">
+          <a href="#">
+            <img src="https://picsum.photos/536/354" alt="Meal image">
+            <div class="meal-name">
+              <span>Nombre comida</span>
+            </div>
+          </a>
+        </div>
+        <div class="meal-item">
+          <a href="#">
+            <img src="https://picsum.photos/536/354" alt="Meal image">
+            <div class="meal-name">
+              <span>Nombre comida</span>
+            </div>
+          </a>
+        </div>
+      </div>      
+      
+    </div>
+  </div>
+
+  <script>
+    const busqueda = document.querySelector('.input-busqueda')
+    const comidas = document.querySelector('.meals')
+    const boton = document.querySelector('.btn-Random')
+
+    // busqueda.addEventListener('keydown', getMealList);
+    boton.addEventListener('click', getMealList);
+    
+    function getMealList(e){
+      // if (e.key === 'Enter') {
+        searchedMeal = busqueda.value.trim();
+
+        fetch(`www.themealdb.com/api/json/v1/1/search.php?s=${searchedMeal}`)
+        .then(response => response.json())
+        .then(data => {
+          console.log(data);
+        })
+        .catch(function(e){
+          console.log(e);
+        })
+      // }
+    }
+  </script>
+ 
+</body>
+
+</html>
