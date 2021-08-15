@@ -1,81 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <title>Equipo 7</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@800;900&family=Kadwa:wght@400;700&family=Pridi&display=swap" rel="stylesheet"> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
-    <link href="./css/styles.css" rel="stylesheet">
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@800;900&family=Kadwa:wght@400;700&family=Pridi&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet" />
+    <link href="./css/styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
     <section id="recetas">
-        <nav class="navbar">
-            <div class="logo">
-                <h1>LOGO</h1>
-            </div>
-            <div class="opciones pantalla-busqueda" >
-                <a href="#recetas">Recetas</a>
-                <a href="#sugerencias">Sugerencias</a>
-                <a href="#acerca">Acerca de</a>
-            </div>
-        </nav>
+      <nav class="navbar">
+        <div class="logo">
+          <h1>LOGO</h1>
+        </div>
+        <div class="opciones pantalla-busqueda">
+          <a href="#recetas">Recetas</a>
+          <a href="#sugerencias">Sugerencias</a>
+          <a href="#acerca">Acerca de</a>
+        </div>
+      </nav>
 
-        <div class="contenedor">
-            <h2 class="h3">¿Qué quieres cocinar hoy?</h2>
-            <p class="p1"> Usa nuestra búsqueda avanzada para<br>encontrar las instrucciones de tu comida<br>favorita</p>
-        </div>
-        
-        <div class="inputs">
-            <input type="text" id="site-search" name="q" aria-label="Search through site content" placeholder="Busca tu receta favorita">
-            <button id="brand" class="bRandom" type="submit">
-                <img src="./assets/images/random.svg" alt=""> 
-                Probar algo aleatorio
-            </button>
-        </div>
+      <div class="contenedor">
+        <h2 class="h3">¿Qué quieres cocinar hoy?</h2>
+        <p class="p1">
+          Usa nuestra búsqueda avanzada para<br />encontrar las instrucciones de
+          tu comida<br />favorita
+        </p>
+      </div>
+
+      <div class="inputs">
+        <input
+          type="text"
+          id="site-search"
+          name="q"
+          aria-label="Search through site content"
+          placeholder="Busca tu receta favorita"
+        />
+        <button id="brand" class="bRandom" type="submit">
+          <img src="./assets/images/random.svg" alt="" />
+          Probar algo aleatorio
+        </button>
+      </div>
     </section>
 
-<!--COMIENZA SECCIÓN RESULTADOS DE BÚSQUEDA, DISPLAY:NONE POR DEFECTO-->
-<div class="meal-results">
-    <span class="results-title">Resultados de la búsqueda</span>
+    <!--COMIENZA SECCIÓN RESULTADOS DE BÚSQUEDA, DISPLAY:NONE POR DEFECTO-->
+    <div class="meal-results">
+      <span class="results-title">Resultados de la búsqueda</span>
       <div class="meals">
-        
+          <!-- Está vacío aquí porque los contenidos se agregan a través
+        del javascript. Lo mismo haremos con los ingredientes.-->
+      </div>
     </div>
-</div>      
 
-<!--COMIENZA SECCIÓN RESULTADOS DE BÚSQUEDA, DISPLAY:NONE POR DEFECTO-->
+    <!--TERMINA SECCIÓN RESULTADOS DE BÚSQUEDA, DISPLAY:NONE POR DEFECTO-->
+
     <section id="sugerencias" class="pantalla-busqueda">
-        <div class="contenedor2">
-            <h6 class="th6">Tus recetas favoritas en un solo lugar</h6>
-            <div class="instruccion">
-                <div class="uno">
-                    <img class="img-instr" src="./assets/images/comida.jpeg" alt="comida"/>
-                    <p>Usa la búsqueda para acceder a todas las recetas del cátalogo</p>
-                </div>
+      <div class="contenedor2">
+        <h6 class="th6">Tus recetas favoritas en un solo lugar</h6>
+        <div class="instruccion">
+          <div class="uno">
+            <img
+              class="img-instr"
+              src="./assets/images/comida.jpeg"
+              alt="comida"
+            />
+            <p>Usa la búsqueda para acceder a todas las recetas del cátalogo</p>
+          </div>
 
-                <div class="dos">
-                    <img class="img-instr" src="./assets/images/nota.jpeg" alt="nota">
-                    <p>Da clic en aleatorio para generar una sugerencia</p>
-                </div>
+          <div class="dos">
+            <img class="img-instr" src="./assets/images/nota.jpeg" alt="nota" />
+            <p>Da clic en aleatorio para generar una sugerencia</p>
+          </div>
 
-                <div class="tres">
-                    <img class="img-instr" src="./assets/images/cocinar.jpeg" alt="cocinar">
-                    <p>¡Diviértete cocinando!</p>
-                </div>
-            </div>
+          <div class="tres">
+            <img
+              class="img-instr"
+              src="./assets/images/cocinar.jpeg"
+              alt="cocinar"
+            />
+            <p>¡Diviértete cocinando!</p>
+          </div>
         </div>
+      </div>
     </section>
-        <section id="receta" class="mt-4">
-            <div class="container" id="receta-header">
-                <div id="contenedor-imagen-receta">
-                    <!-- <img src="" alt="" id="imagen-receta"> -->
-                </div>
-                <div id="receta-header-right">
-                    <h3 id="titulo-receta">Receta Seleccionada</h3>
-                    <p>Ingredientes</p>
-                    <div id="ingredientes">
+
+    <!--COMIENZA SECCIÓN VISUALIZAR RECETA, DISPLAY:NONE POR DEFAULT-->
+
+    <!-- Éstas son clases para el modal de bootstrap, por favor no borren ningún div ni ninguna clase-->
+    <div id="receta-modal" class="modal fade" tabindex="-1" aria-labelledby="receta-modal">
+      <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        <section id="receta" class="modal-body">
+          <!-- Esto lo comenté porque el punto es irlos agregando desde js con un
+            for loop, una vez que esté hecho ese js ya podemos borrar esto de aquí.
+              
+            <div id="ingredientes">
                         <div class="ingrediente">
                             <img class="circulo" src="" alt="">
                             <p>Ingrediente</p>
@@ -90,52 +124,54 @@
                             <p>Ingrediente</p>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="container" id="receta-body">
-                <h5>Instrucciones</h5>
-                <p id="receta-instrucciones">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum cupiditate
-                    dolores aperiam ipsam, ducimus voluptatum accusantium! Saepe omnis tenetur ex ducimus necessitatibus eos
-                    voluptatem corrupti doloribus id, debitis repellendus laborum?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sed reprehenderit aspernatur tempore
-                    iusto, dolorum id sint, magni, molestiae numquam voluptas atque odio eligendi omnis amet minus suscipit
-                    velit placeat?</p>
-            </div>
-            </div>
-        </section>
-        
-<footer class="page-footer font-small blue pt-4" id="acerca">
-    <div class="text-left py-3">
-        <div class="logo">
-            <h1>LOGO</h1>
-        </div>
+        --></section>
+          </div>
+      </div>
     </div>
-    
-    <div class="integrantes">
-        <p>Hecho con <i class="em em-heart" aria-role="presentation" aria-label="HEAVY BLACK HEART"></i> por: </p> 
-        
+    <!--TERMINA SECCIÓN VISUALIZAR RECETA, DISPLAY:NONE POR DEFAULT-->
+
+    <footer class="page-footer font-small blue pt-4" id="acerca">
+      <div class="text-left py-3">
+        <div class="logo">
+          <h1>LOGO</h1>
+        </div>
+      </div>
+
+      <div class="integrantes">
         <p>
-            Estefanía Aguilar Arroyo 
-            <br> 
-            Hugo Joshua Gasperin Castelan
-            <br> 
-            Juan Negrete Castañeda
-            <br>
-            Gustavo Rodríguez Calzada
-            <br>
-            Ángel Esteban Torres Trejo
+          Hecho con
+          <i
+            class="em em-heart"
+            aria-role="presentation"
+            aria-label="HEAVY BLACK HEART"
+          ></i>
+          por:
         </p>
-    </div>  
-  </footer>
 
+        <p>
+          Estefanía Aguilar Arroyo
+          <br />
+          Hugo Joshua Gasperin Castelan
+          <br />
+          Juan Negrete Castañeda
+          <br />
+          Gustavo Rodríguez Calzada
+          <br />
+          Ángel Esteban Torres Trejo
+        </p>
+      </div>
+    </footer>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+      integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+      integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/search.js"></script>
-    <script src="./js/modal.js"></script>
-</body>
-
+  </body>
 </html>
-
-
