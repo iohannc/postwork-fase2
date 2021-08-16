@@ -154,7 +154,11 @@ body{
   width: 100%;
 }
 
-@media (max-width: 780px) {
+@media (min-width: 551px) and (max-width: 780px) {
+  body{
+    background-color: blue;
+  }
+  
   .meals{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -162,10 +166,23 @@ body{
   }
 }
  
-@media screen and (max-width: 480px){
+@media (max-width: 550px){
+  body{
+    background-color: green;
+  }
+  
   .meals{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
   }
+
+  .inPBtn{
+    align-items: center;
+    padding-left: 22px;
+  }
+  .btn-Random{
+    width: 40px;
+  }
+
 }
