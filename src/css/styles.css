@@ -116,18 +116,13 @@ input::placeholder {
     border-radius: 20px;
     align-items: center;
     width: 16%;
+    font-weight: 500;
     background-color: #35D789;
     border: 2px solid #35D789;
     color: #142b1f;
+    padding:0.5%;
 }
 
-/*img random que está en el input*/
-.bRandom > img {
-  width: 15%;
-  margin-left: 2%;
-  margin-top: 1%;
-  padding-right: 10px;
-}
 
 /*h6 debajo de los input*/
 .th6{
@@ -153,32 +148,35 @@ input::placeholder {
 }
 
 /*Tamaño de las imagenes*/
-.uno {
-  margin-left: 10%;
-}
-
 .uno,
 .dos,
 .tres {
-  width: 30%;
+  width: 33%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .uno > img,
 .dos > img,
 .tres > img {
-  width: 40%;
-  margin-left: 5%;
+  width: 50%;
+  margin:auto;
 }
 
 /*Parrafos debajo de las imagenes*/
-.uno > p, .dos > p, .tres > p{
-    width:50%;
-    font-family: 'Pridi', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 37px;
-    text-align: center;
-    color: #0c4b2c;
+.uno > p,
+.dos > p,
+.tres > p {
+  width: 60%;
+  font-family: Pridi;
+  font-style: normal;
+  font-weight: normal;
+  padding-top: 1%;
+  font-size: 21px;
+  font-weight:400;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
 }
 
 /*h6 de prrueba nuestras sugerencias*/
@@ -392,7 +390,13 @@ input::placeholder {
   background: #6adea6;
   margin: auto 1em auto 1em;
 }
-
+.img-instr {
+  border-radius: 50%;
+}
+.img-brand{
+  width: 18%;
+  margin:auto;
+}
 /*Cuerpo de la receta (instrucciones, etc.)*/
 #receta-body {
   font-family: "Kadwa", sans-serif;
@@ -413,6 +417,11 @@ input::placeholder {
 *        TERMINA SECCIÓN RECETA       *
 ****************************************/
 @media (max-width: 800px) {
+  .th6{
+    margin: auto;
+    margin-top:3%;
+    padding: 0;
+  }
   .contenedor2 {
     flex-direction: row;
     flex-wrap: wrap;
@@ -424,6 +433,7 @@ input::placeholder {
     flex-direction: row;
     flex-wrap: wrap;
     height: 100%;
+    margin-top: 2%;
   }
   .uno > p,
   .dos > p,
@@ -435,6 +445,8 @@ input::placeholder {
   .tres > img {
     width: 30%;
     margin-left: 0;
+    padding-bottom: 4%;
+    padding-left: 4%;
   }
 
   .uno,
@@ -475,11 +487,18 @@ input::placeholder {
   }
   .bRandom {
     font-size: 1em;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 140%;
     width:40%;
+    line-height: 240%;
     margin:auto;
     margin-top: 3%;
+    padding:1%;
+  }
+  .img-brand{
+    width: 14%;
+    margin:auto;
+    margin-right: 8%;
   }
   .inputs{
     display: flex;
