@@ -36,6 +36,9 @@ body{
 
 .inPBtn{
   display: flex;
+  align-items: center;
+  padding-bottom: 16px;
+  
 }
 
 .input-busqueda{
@@ -155,22 +158,16 @@ body{
 }
 
 @media (min-width: 551px) and (max-width: 780px) {
-  body{
-    background-color: blue;
-  }
-  
   .meals{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
+
 }
  
 @media (max-width: 550px){
-  body{
-    background-color: green;
-  }
-  
+
   .meals{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -178,7 +175,6 @@ body{
   }
 
   .inPBtn{
-    align-items: center;
     padding-left: 22px;
   }
   .btn-Random{
