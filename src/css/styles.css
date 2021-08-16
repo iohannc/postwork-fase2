@@ -516,17 +516,17 @@ input::placeholder {
     flex-wrap: wrap;
   }
   .logo {
-    padding-left: 20px;
+    padding-left: 10px;
     padding-top: 6px;
   }
-  .opciones > a {
-    padding-right: 10px;
-    color: #157145;
-    font-family: 'Kadwa', sans-serif;
-    font-style: normal;
-    font-weight: normal;
+  .logo > h1 {
+    color: white;
     font-size: 17px;
-    line-height: 40px;
+  }
+  .opciones > a {
+    padding-right: 0px;
+    font-size: 17px;
+    line-height:120%;
   }
   .sug_recetas {
     margin-top: 0%;
