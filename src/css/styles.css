@@ -499,6 +499,11 @@ input::placeholder {
     margin-top: 3%;
     padding:1%;
   }
+  #receta-header-right {
+    max-width: 100%;
+    width: 90%;
+    margin-left:5%;
+  }
   .img-brand{
     width: 14%;
     margin:auto;
