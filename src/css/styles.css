@@ -490,7 +490,6 @@ input::placeholder {
     font-weight: 500;
     line-height: 140%;
     width:40%;
-    line-height: 240%;
     margin:auto;
     margin-top: 3%;
     padding:1%;
@@ -499,6 +498,7 @@ input::placeholder {
     width: 14%;
     margin:auto;
     margin-right: 8%;
+    margin-left: 8%;
   }
   .inputs{
     display: flex;
