@@ -343,7 +343,7 @@ input::placeholder {
 #contenedor-imagen-receta {
   background-color: #6adea6;
   height: 450px;
-  width: 450px;
+  width: 60%;
   color: black;
 }
 #imagen-receta {
@@ -370,6 +370,7 @@ input::placeholder {
 }
 #ingredientes {
     display: flex;
+    flex-wrap: wrap;
 }
 .ingrediente {
     display: flex;
