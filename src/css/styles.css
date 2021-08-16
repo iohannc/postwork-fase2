@@ -338,6 +338,7 @@ input::placeholder {
   align-self: center;
   margin-left: 4rem;
   margin-bottom: 4rem;
+  max-width: 60%;
 }
 /*Imagen de la receta */
 #contenedor-imagen-receta {
@@ -370,6 +371,7 @@ input::placeholder {
 }
 #ingredientes {
     display: flex;
+    flex-wrap: wrap;
 }
 .ingrediente {
     display: flex;

@@ -76,7 +76,22 @@ function showMeal(event) {
         //Es mejor agregar la imagen como background del div a utilizar una img tag.
         recipeArea.firstElementChild.firstElementChild.style.backgroundImage = `url(${recipe.meals[0].strMealThumb})`
         recipeArea.firstElementChild.firstElementChild.style.backgroundSize = 'cover';
-        //console.log(recipeArea)
+        showIngredients(recipe.meals[0]);
 
     })
+}
+
+function showIngredients(recipe) {
+    const recipeArea = document.getElementById('ingredientes');
+    const meal = recipe;
+    for (i=1;;i++) {
+        if (meal[`strIngredient${i}`] && (meal[`strIngredient${i}`] != "")) {
+            let ingredientElement = document.createElement('div');
+            ingredientElement.className = 'ingrediente';
+            ingredientElement.innerHTML = `
+            <img class="circulo" src="https://www.themealdb.com/images/ingredients/${meal[`strIngredient${i}`].trim()}.png" alt="">
+            <p>${meal[`strIngredient${i}`]}</p>`
+            recipeArea.appendChild(ingredientElement);
+        } else break;
+    }
 }
