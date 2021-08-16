@@ -345,6 +345,7 @@ input::placeholder {
   height: 450px;
   width: 60%;
   color: black;
+  border-radius: 5%;
 }
 #imagen-receta {
   max-width: 100%;
@@ -395,8 +396,9 @@ input::placeholder {
   border-radius: 50%;
 }
 .img-brand{
-  width: 18%;
-  margin:auto;
+  width: 20%;
+  margin-right: 6%;
+  padding-left: 2%;
 }
 /*Cuerpo de la receta (instrucciones, etc.)*/
 #receta-body {
@@ -489,7 +491,7 @@ input::placeholder {
   .bRandom {
     font-size: 1em;
     font-weight: 500;
-    line-height: 140%;
+    line-height: 180%;
     width:40%;
     margin:auto;
     margin-top: 3%;
@@ -498,8 +500,8 @@ input::placeholder {
   .img-brand{
     width: 14%;
     margin:auto;
-    margin-right: 8%;
-    margin-left: 8%;
+    margin-right: 2%;
+    margin-left: 2%;
   }
   .inputs{
     display: flex;
@@ -546,6 +548,9 @@ input::placeholder {
   #receta-header {
     flex-direction: column;
   }
+  #receta-header p,h5{
+    text-align:center;
+  }
   #contenedor-imagen-receta {
     width: 250px;
     height: 250px;
@@ -554,6 +559,7 @@ input::placeholder {
   }
   #titulo-receta {
     font-size: 2.3rem;
+    
   }
   #receta-body {
     margin-left: 3rem;
