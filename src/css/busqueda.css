@@ -34,7 +34,42 @@ body{
 
 }
 
+.inPBtn{
+  display: flex;
+}
 
+.input-busqueda{
+  border: 2px solid #35d789;
+  border-radius: 20px;
+  background-image: url("../assets/images/search.svg");
+  background-position: 12px 11px;
+  background-repeat: no-repeat;
+  padding: 10px 20px 10px 32px;
+  font-size:15px;
+  line-height:5px;
+  font-weight:500;
+  margin-top: 20px;
+  width: 65%;
+  
+}
+
+.btn-Random{
+  display:flex;
+  border-radius: 10px;
+  width: 15%;
+  background-color: #35D789;
+  border: 2px solid #2c7c55;
+  color: #142b1f;
+  margin-top: 21px;
+  padding-top: 3px;
+  padding-left: 3px;
+  cursor: pointer;
+  
+}
+
+.logo{
+  color: white;
+}
 
 .search-title{
   font-size: 14px;
@@ -50,6 +85,7 @@ body{
 }
 
 .results-title{
+  padding-top: 20px;
   color: #157145;
   font-family: Catamaran;
   font-weight: bold;
@@ -95,6 +131,27 @@ body{
   color: #363537;
   font-size: 12px;
   font-family: 'Pridi', serif;
+}
+
+/*Footer*/
+.page-footer {
+  background-color: #157145;
+}
+
+/*Estilos a los nombres de los integrantes*/
+.integrantes {
+  padding-left: 10%;
+  color: #fff;
+}
+.sug_recetas {
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+.page-footer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 8rem;
+  width: 100%;
 }
 
 @media (max-width: 780px) {
