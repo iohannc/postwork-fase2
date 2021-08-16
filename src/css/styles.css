@@ -418,6 +418,9 @@ input::placeholder {
   color: #157145;
   font-weight: 700;
 }
+.ham{
+  display: none;
+}
 /***************************************
 *        TERMINA SECCIÓN RECETA       *
 ****************************************/
@@ -574,4 +577,61 @@ input::placeholder {
     margin-left: 3rem;
     margin-top: initial;
   }
+}
+@media (max-width: 600px) {
+  .circulo {
+    width: 70px;
+    height: 70px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #6adea6;
+    margin: auto 1em auto 1em;
+  }
+
+  #ingredientes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: -50px;
+  }
+  .ingrediente > p {
+    font-size: 12px;
+  }
+  /*Estilos al h1 llamado LOGO*/
+.logo > h1 {
+  font-size: 30px;
+}
+
+/*Ham menu*/
+.opciones{
+  display: none;
+}
+.open{
+  display: block;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+.hide{
+  display: none;
+}
+.ham{
+  margin: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.ham.vis{
+  display: block;
+}
+.line-ham{
+  width: 20px;
+  height: 3px;
+  background-color: #f5f5f5;
+  margin: 5px;
+  border-radius: 2px;
+}
 }
