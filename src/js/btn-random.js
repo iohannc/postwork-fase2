@@ -38,3 +38,23 @@ function mostrar(event){
          showIngredients(recipe.meals[0])
 })
 }
+
+// Menu ham
+
+const menuHam = document.querySelector('.ham');
+const opciones = document.querySelector('.opciones.pantalla-busqueda')
+const links = document.querySelectorAll('.opciones>a')
+const logo = document.querySelector('.logo');
+
+menuHam.addEventListener('click', () =>{
+    opciones.classList.add('open')
+    menuHam.classList.remove('vis');
+    logo.classList.add('hide');
+}
+)
+
+links.forEach(item => item.addEventListener('click' , ()=> {
+    opciones.classList.remove('open');
+    logo.classList.remove('hide');
+    menuHam.classList.add('vis');
+}))
