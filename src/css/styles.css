@@ -424,8 +424,10 @@ input::placeholder {
 @media (max-width: 800px) {
   .th6{
     margin: auto;
-    margin-top:3%;
+    margin-top:8%;
+    margin-bottom: 3%;
     padding: 0;
+    line-height:100%
   }
   .contenedor2 {
     flex-direction: row;
@@ -524,7 +526,7 @@ input::placeholder {
     font-size: 17px;
   }
   .opciones > a {
-    padding-right: 0px;
+    padding-right: 10px;
     font-size: 17px;
     line-height:120%;
   }
