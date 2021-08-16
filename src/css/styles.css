@@ -265,10 +265,10 @@ input::placeholder {
 *COMIENZA SECCIÓN RESULTADOS DE BÚSQUEDA*
 *****************************************/
 .meal-results{
-  width: 80%;
+  max-width: 100%;
   display: none; 
   flex-direction: column;
-  margin: 75px 100px 0 80px;
+  margin: 2%
 }
 
 .results-title{
@@ -294,6 +294,7 @@ input::placeholder {
 .meal-item{
   transition: 0.3s;
   border-radius: 5px;
+  margin:2%
 }
 
 /* IMAGEN DEL CARD */
