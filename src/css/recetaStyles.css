@@ -45,6 +45,13 @@ a {
   align-self: flex-end;
   margin-bottom: 4rem;
 }
+
+/*Imagen de la receta con imagen*/
+.imgRec{
+  height: 80%;
+  padding-top: 20px;
+}
+
 /*Imagen de la receta */
 #contenedor-imagen-receta {
   background-color: #6adea6;
@@ -123,7 +130,7 @@ input {
   border: 2px solid #35d789;
   border-radius: 20px;
   background-image: url("../assets/images/search.svg");
-  background-position: 15px 14px;
+  background-position: 13px 10px;
   background-repeat: no-repeat;
   padding: 5px 35px;
   height: 30%;
@@ -203,6 +210,14 @@ input::placeholder {
     padding-left: 2rem;
     background-position: 10px 1px;
   }
+
+  /*Imagen de la receta con imagen*/
+  .imgRec{
+    width: 70%;
+    padding-bottom: 20px;
+}
+
+
   .bRandom {
     width: 30%;
     max-height: 1.5rem;
