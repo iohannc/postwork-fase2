@@ -35,7 +35,6 @@ function mostrar(event){
          recipeArea.firstElementChild.firstElementChild.style.backgroundImage = `url(${recipe.meals[0].strMealThumb})`
          recipeArea.firstElementChild.firstElementChild.style.backgroundSize = 'cover';
          //resultsArea.style.display = "block";
-
-         console.log(recipeArea)
+         showIngredients(recipe.meals[0])
 })
 }

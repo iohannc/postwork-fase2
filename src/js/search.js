@@ -74,31 +74,27 @@ function showMeal(event) {
                 <h5>Instrucciones</h5>
                 <p id="receta-instrucciones">${recipe.meals[0].strInstructions}</p>
             </div>
-            
-            `;
+            </div>`;
+        //Es mejor agregar la imagen como background del div a utilizar una img tag.
+        recipeArea.firstElementChild.firstElementChild.style.backgroundImage = `url(${recipe.meals[0].strMealThumb})`
+        recipeArea.firstElementChild.firstElementChild.style.backgroundSize = 'cover';
+        showIngredients(recipe.meals[0]);
 
-      //Es mejor agregar la imagen como background del div a utilizar una img tag.
-      recipeArea.firstElementChild.firstElementChild.style.backgroundImage = `url(${recipe.meals[0].strMealThumb})`;
-      recipeArea.firstElementChild.firstElementChild.style.backgroundSize =
-        "cover";
-      const ingredientes = document.getElementById("ingredientes"); // El contenido de la receta que corresponde a los ingredientes
-      let ing = recipe.meals[0];
-      console.log(ing);
-      //console.log(recipeArea)
-      let i = 1;
-      let b = "strIngredient" + i;
-
-
-      while (ing[b] != "") {
-        let ingindividual = document.createElement("div");
-        ingindividual.className="ingrediente"
-        ingindividual.innerHTML = `<img class="circulo" src="" alt="">
-            <p>${ing[b]}</p>`;
-        ingindividual.firstElementChild.src=`http://www.themealdb.com/images/ingredients/${ing[b]}.png`
-        ingredientes.appendChild(ingindividual);
-        console.log(ing[b]);
-        i += 1;
-        b = "strIngredient" + i;
-      }
-    });
+    })
 }
+
+function showIngredients(recipe) {
+    const recipeArea = document.getElementById('ingredientes');
+    const meal = recipe;
+    for (i=1;;i++) {
+        if (meal[`strIngredient${i}`] && (meal[`strIngredient${i}`] != "")) {
+            let ingredientElement = document.createElement('div');
+            ingredientElement.className = 'ingrediente';
+            ingredientElement.innerHTML = `
+            <img class="circulo" src="https://www.themealdb.com/images/ingredients/${meal[`strIngredient${i}`].trim()}.png" alt="">
+            <p>${meal[`strIngredient${i}`]}</p>`
+            recipeArea.appendChild(ingredientElement);
+        } else break;
+    }
+}
+
