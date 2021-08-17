@@ -40,6 +40,7 @@ function getResults(event) {
         for (i of searchArea) {
           i.style.display = "none";
         }
+        menuHam.classList.remove('vis');
         // Cambia el display de resultsArea de 'none' a 'flex'
         // para mostrar los resultados.
         resultsArea.style.display = "flex";
