@@ -292,6 +292,8 @@ input::placeholder {
 
 /* CONTENEDOR DEL CARD */
 .meal-item{
+  background-color: inherit;
+  border: inherit;
   transition: 0.3s;
   border-radius: 5px;
   margin:2%
@@ -304,7 +306,6 @@ input::placeholder {
 }
 
 .meal-item:hover {
-  /* border: solid 1px #35d789; */
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
@@ -316,7 +317,7 @@ input::placeholder {
 .meal-name{
   padding: 10px 5px;
   color: #363537;
-  font-size: 12px;
+  font-size: 15px;
   font-family: 'Pridi', serif;
 }
 
@@ -573,5 +574,11 @@ input::placeholder {
   #receta-body {
     margin-left: 3rem;
     margin-top: initial;
+  }
+  .meals{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 }
