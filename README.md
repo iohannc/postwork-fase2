@@ -7,8 +7,7 @@
 - Ángel Esteban Torres Trejo
 
 ### Mockups:
-**Figma:** https://www.figma.com/file/eWJFYDNVJLwYXaPlRyeXdM/Projecto?node-id=0%3A1
-
+**Figma:** https://www.figma.com/file/eWJFYDNVJLwYXaPlRyeXdM/Projecto?node-id=0%3A1  
 **Pagina:** https://recetsearch.netlify.app/
 
 ![Landing page](https://i.imgur.com/OsSyzrx.png)
